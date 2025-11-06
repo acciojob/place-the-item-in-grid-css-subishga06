@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Grid 2x2 Design</title>
   <style>
-    /* Grid Container */
     .holder {
-      display: grid;                     /* Enable CSS grid */
-      grid-template-rows: repeat(2, 1fr); /* Create 2 equal rows */
-      grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
-      width: 200px;                      /* Total grid width */
-      height: 200px;                     /* Total grid height */
-      gap: 5px;                          /* Optional: space between items */
-      background-color: #ddd;            /* Optional: to visualize container */
+      display: grid;
+      grid-template-columns: repeat(2, 100px);
+      grid-template-rows: repeat(2, 100px);
+      width: 200px;
+      height: 200px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      /* Important: No gap or spacing that affects the total size */
     }
 
-    /* Grid Items (no property changes to their layout) */
     .item {
       background-color: lightblue;
       display: flex;
